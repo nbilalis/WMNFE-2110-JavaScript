@@ -1,0 +1,7 @@
+*.map
+*.zip
+*.pptx
+*.cmd
+
+_examples/
+node_modules/
