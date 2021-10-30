@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example 3</title>
+</head>
+<body>
+	<script>
+		"use strict"
+
+		let a = prompt("Enter first number:");
+		let b = prompt("Enter second number:");
+		let c;
+
+		c = a + b;
+		// Why is the result wrong?
+		document.write("a + b = " + c);
+		console.log(typeof c);
+
+
+		document.write("<br>");
+
+		c = a * b;
+		// Why is the result now correct?
+		document.write("a * b = " + c);
+		console.log(typeof c);
+	</script>
+</body>
+</html>
