@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Example #7</title>
+</head>
+
+<body>
+	<script>
+		'use strict';
+
+		const input = prompt('Enter grade:');
+		const grade = parseInt(input);
+
+		if (grade < 10) {						// [1, 10)
+			alert('Sorry...');
+		} else if (grade <= 15) {		// [10, 15]
+			alert('Fair enough');
+		} else if (grade <= 20) {		// (15, 20]
+			alert('Well done!');
+		} else {
+			alert('Wrong input');			// (20, +∞)
+		}
+	</script>
+</body>
+
+</html>

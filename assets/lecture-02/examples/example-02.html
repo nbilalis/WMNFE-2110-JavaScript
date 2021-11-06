@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Example #2</title>
+</head>
+
+<body>
+  <script>
+    'use strict';
+
+    const input = prompt('Enter the radius of the circle:');
+    const r = parseFloat(input);
+    /* Alternatively
+    const r = input * 1;
+    const r = +input;
+    */
+
+    if (isNaN(r) === false) { 	// !isNaN(r)
+      const circ = 2 * Math.PI * r;
+      const area = Math.PI * Math.pow(r, 2);
+
+      // alert('Circumference: ' + Math.round(circ) + '\nArea: ' + Math.round(area))
+      alert(`Circumference: ${Math.round(circ)}\nArea: ${Math.round(area)}`);
+    }
+  </script>
+</body>
+
+</html>

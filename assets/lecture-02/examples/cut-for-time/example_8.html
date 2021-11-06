@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example #8</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        const age = parseInt(prompt('Age:'));
+        const height = parseInt(prompt('Height (cm):'));
+        const driving = confirm('Do you drive (OK=Yes/Cancel=No)?');
+
+        if (age < 15 && height > 2) {
+            alert('You are very tall for your age');
+        }
+
+        if (driving == true && (age < 17 || age > 74)) {
+            alert('Are you allowed to drive?');
+        }
+    </script>
+</body>
+</html>
