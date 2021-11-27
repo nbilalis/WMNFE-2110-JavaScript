@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework #3</title>
+</head>
+<body>
+  <script>
+    'use strict';
+
+    let unemployed = confirm('Είσαστε άνεργος; (OK = Ναι, Cancel = Όχι)');
+
+    if (unemployed) {
+      alert('Δε σας αναλογεί φόρος');
+    } else {
+      let income = parseInt(prompt('Παρακαλώ εισάγετε το εισόδημά σας:'));
+      // Extra
+      let receipts = parseInt(prompt('Τι ποσό συγκεντρώσατε σε αποδείξεις:'));
+
+      let tax;
+      if (income < 10000) {
+        tax = income * 0.05;
+      } else if (income < 25000) {
+        tax = income * 0.15;
+      } else if (income < 40000) {
+        tax = income * 0.25;
+      } else {
+        tax = income * 0.40;
+      }
+
+      // Extra
+      tax = tax - receipts * 0.1;
+
+      alert('Ο φόρος που αναλογεί στο εισόδημα ' + income + ' είναι ' + tax);
+    }
+
+  </script>
+</body>
+</html>

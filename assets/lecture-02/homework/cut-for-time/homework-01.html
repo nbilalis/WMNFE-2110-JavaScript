@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework #1</title>
+</head>
+<body>
+  <script>
+    'use strict';
+
+    const SECRET_USERNAME = 'admin';
+    const SECRET_PASSWORD = '12345';
+
+    let username = prompt('Username:');
+    let password = prompt('Password:');
+
+    if (username === SECRET_USERNAME && password === SECRET_PASSWORD) {
+      document.write('Welcome Admin!');
+    } else {
+      alert('Unauthorized access!');
+    }
+  </script>
+</body>
+</html>

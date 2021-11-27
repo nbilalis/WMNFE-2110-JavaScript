@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework #2</title>
+</head>
+<body>
+  <script>
+    'use strict';
+
+    const married = confirm('Είσαστε παντρεμένος;\n\n(OK = Ναι, Cancel = Όχι)');
+    const no_of_children = prompt('Πόσα παιδιά έχετε:') * 1;
+
+    let message = (married) ? 'Παντρεμένος' : 'Ανύπαντρος';
+
+    message += ' και ';
+
+    switch (no_of_children) {
+      case 0:
+        message += 'χωρίς παιδιά';
+        break;
+      case 1:
+        message += 'με ένα παιδί';
+        break;
+      case 2:
+        message += 'με δύο παιδιά';
+        break;
+      case 3:
+        message += 'τρίτεκνος';
+        break;
+      default:
+        message += 'πολύτεκνος';
+        break;
+    }
+
+    document.write(message);
+  </script>
+</body>
+</html>
