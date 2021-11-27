@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #3</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      // Προπαίδεια
+      // 1 x 7 = 7
+      // 2 x 7 = 14
+      // ...
+
+      const n = prompt('Δώσε μου έναν αριθμό') * 1; // string → number
+
+      let i = n;
+      while (i <= n * 10) {
+        console.log(i / n + ' x ' + n + ' = ' + i);
+
+        i += n;
+      }
+
+      // Ή διαφορετικά:
+
+      console.log('---');
+
+      i = 1;
+      while (i <= 10) {
+        console.log(`${i} x ${n} = ${i * n}`);
+
+        i += 1;
+      }
+
+      // Ή διαφορετικά:
+
+      console.log('---');
+
+      i = 1;
+      while (i <= 10) {
+        var msg = i;
+        msg += ' x ';
+        msg += n;
+        msg += ' = ';
+        msg += i * n;
+
+        console.log(msg);
+
+        i += 1;
+      }
+    </script>
+  </body>
+</html>

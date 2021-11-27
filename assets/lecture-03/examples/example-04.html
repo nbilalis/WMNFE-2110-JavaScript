@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #4</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      // Sum and average of unknown number of grades
+
+      let count = 0, sum = 0;
+
+      while (true) {
+        let grade = prompt('Enter grade, or 0 to stop:') * 1; // string → number
+
+        if (grade === 0) break;
+
+        count += 1; // count = count + 1;
+        sum += grade; // sum = sum + grade;
+      }
+
+      if (count > 0) {
+        const average = sum / count;
+        alert(`Your average is ${average}`);
+      } else {
+        alert('No grades were entered...');
+      }
+    </script>
+  </body>
+</html>

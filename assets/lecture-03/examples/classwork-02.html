@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classwork #2</title>
+  </head>
+  <body>
+    <pre>
+    <script>
+      'use strict';
+
+      const n = prompt('Enter tree height:') * 1;
+      document.write('\n');
+
+      for (let i = 0; i < n-1; i += 1) {
+        // Print spaces before the stars
+        const numberOfSpacesInRow = n - i - 1;
+        for (let j = 0; j < numberOfSpacesInRow; j += 1) {
+          document.write(' ');
+        }
+
+        // Print the stars
+        const numberOfStarsInRow = 2 * i + 1;
+        for (let j = 0; j < numberOfStarsInRow; j += 1) {
+          document.write('*');
+        }
+
+        // Go to next line
+        document.write('\n');
+      }
+
+      // Print the tree stub
+      for (let j = 0; j < n - 1; j += 1) {
+        document.write(' ');
+      }
+      document.write('◾');
+    </script>
+  </pre>
+  </body>
+</html>
