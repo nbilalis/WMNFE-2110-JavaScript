@@ -149,7 +149,7 @@
   color: gray;
 }
 .remark-slide .cover {
-  border: 15px solid #743bbc;
+  border: 10px solid #743bbc;
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/cover-bg.png");
   background-position: center top;
   background-size: cover;
@@ -161,7 +161,7 @@
 }
 .remark-slide .cover h3 {
   color: #743bbc;
-  font-size: 32pt;
+  font-size: 36pt;
 }
 .remark-slide .cover .logo-sae {
   top: 50px;
@@ -169,11 +169,11 @@
 }
 .remark-slide .cover .logo-web {
   top: initial;
-  bottom: 35px;
-  right: 40px;
+  bottom: 30px;
+  right: 35px;
 }
-.remark-slide .cover .logo-web .img {
-  height: 75px;
+.remark-slide .cover .logo-web img {
+  height: 80px;
 }
 .remark-slide .cover .ruler,
 .remark-slide .cover .footer,
@@ -345,6 +345,9 @@
 }
 .remark-slide .extra-long-code .remark-code {
   font-size: 0.6em;
+}
+.remark-slide .hide-table-head thead {
+  display: none;
 }
 .remark-slide .remark-inline-code {
   color: #ecb730;

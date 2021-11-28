@@ -195,7 +195,7 @@ $accent-color: #743bbc;
   $bg-opacity: 0.75;
 
   .cover {
-    border: 15px solid $accent-color;
+    border: 10px solid $accent-color;
     background: linear-gradient(
         rgba(0, 0, 0, $bg-opacity),
         rgba(0, 0, 0, $bg-opacity)
@@ -212,7 +212,7 @@ $accent-color: #743bbc;
 
     h3 {
       color: $accent-color;
-      font-size: 32pt; // 28pt;
+      font-size: 36pt; // 28pt;
     }
 
     .logo-sae {
@@ -222,11 +222,11 @@ $accent-color: #743bbc;
 
     .logo-web {
       top: initial;
-      bottom: 35px;
-      right: 40px;
+      bottom: 30px;
+      right: 35px;
 
-      .img {
-        height: 75px;
+      img {
+        height: 80px;
       }
     }
 
@@ -426,6 +426,8 @@ $accent-color: #743bbc;
     font-size: 0.8em;
   }
 
+  // Custom slide classes
+
   .long-text {
     h4 {
       margin-bottom: 0.5em;
@@ -472,6 +474,12 @@ $accent-color: #743bbc;
 
   .extra-long-code .remark-code {
     font-size: 0.6em;
+  }
+
+  .hide-table-head {
+    thead {
+      display: none;
+    }
   }
 
   .remark-inline-code {
