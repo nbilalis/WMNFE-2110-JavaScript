@@ -3,5 +3,5 @@
 *.pptx
 *.cmd
 
-_examples/
+_assets/
 node_modules/
