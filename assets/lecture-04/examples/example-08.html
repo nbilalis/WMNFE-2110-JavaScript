@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #8</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      const things = ['chair', 'watch', 'spoon', 'book'];
+
+      // Use .push(item1[, item2, ...]) to add items to the end of the array
+
+      things.push('fork');
+      things.push('bed', 'tv');
+
+      console.log(things); // ['chair', 'watch', 'spoon', 'book', 'fork', 'bed', 'tv'];
+
+      const new_things = ['couch', 'radio'];
+
+      // This wont add two new itens to the array...
+      things.push(new_things);     // things.push(['couch', 'radio']);
+      console.log(things);         // Hmm...
+
+      // Here be dragons - ES6
+      things.push(...new_things);  // things.push('couch', 'radio');
+      console.log(things);
+    </script>
+  </body>
+</html>

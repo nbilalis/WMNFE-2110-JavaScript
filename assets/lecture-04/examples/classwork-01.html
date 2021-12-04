@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classwork #1</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      const names = [
+        'Barmpounis, Andronikos',
+        'Copeland, Stephen Richard',
+        'Matsan, Denys',
+        'Mylonas, Georgios',
+        'Paraskevopoulos, Konstantinos-Aias',
+        'Tselikis, Lampros',
+        'Zoumi, Vilelmini Evangelia', // Trailing, dangling comma
+      ];
+
+      // Make an unordered list with the contents of an array
+
+      document.write('<ul>');
+
+      for (let i = 0; i < names.length; i++) {
+        document.write(`<li>${names[i]}</li>`);
+      }
+
+      document.write('</ul>');
+    </script>
+  </body>
+</html>

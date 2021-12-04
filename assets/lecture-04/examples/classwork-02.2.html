@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classwork #2</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      const names = [];
+
+      while (true) {
+        let name = prompt("Enter student's name:");
+        names.push(name);          // names[names.length] = name;
+
+        let answer = confirm('Do you need to enter another name? (OK - yes, Cancel - no)');
+
+        if (answer === false) {    // !answer
+          break;
+        }
+      }
+
+      // Show on page
+
+      names.sort();
+
+      document.write('<ol>');
+
+      for (let i = 0; i < names.length; i++) {
+        document.write(`<li>${names[i]}</li>`);
+      }
+
+      document.write('</ol>');
+    </script>
+  </body>
+</html>

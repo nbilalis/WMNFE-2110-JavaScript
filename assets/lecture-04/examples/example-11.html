@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example #11</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      const things = ['chair', 'watch', 'spoon', 'book'];
+
+      // Array copy trick
+      const things_copy = things.slice();
+
+      // Use .slice(start[, end]) to get a part of an array
+
+      let slice = things.slice(1);
+      console.log(slice);    // ['watch', 'spoon', 'book']
+
+      slice = things.slice(1, 3);
+      console.log(things);   // ['watch', 'spoon']
+    </script>
+  </body>
+</html>

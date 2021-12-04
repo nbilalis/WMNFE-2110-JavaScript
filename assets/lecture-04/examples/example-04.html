@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #4</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      // Numbers are copied when using assignment (=)
+
+      let c = 1;
+      let d = c;
+
+      d += 1;
+      console.log(c); // 1
+
+      // This will not copy an array
+      // It'll create an "alias" for the same array
+
+      const a = [1, 2, 3, 4, 5];
+      const b = a;
+
+      b[0] = 6;
+
+      console.log(a); // [6, 2, 3, 4, 5]
+      console.log(b); // [6, 2, 3, 4, 5]
+    </script>
+  </body>
+</html>

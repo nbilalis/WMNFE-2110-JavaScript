@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example #10</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      const things = ['chair', 'watch', 'spoon', 'book'];
+
+      // Use .unshift(item1[, item2, ...]) to add items to the begging of an array
+
+      things.unshift('clock'); // Μετατόπιση προς τα δεξιά
+      console.log(things);     // ['clock', 'chair', 'watch', 'spoon', 'book']
+
+      // Use .shift() to remove items from the beggining of an array
+
+      things.shift();
+      let removed = things.shift();
+      console.log(removed);    // chair
+      console.log(things);     // ['watch', 'spoon', 'book']
+    </script>
+  </body>
+</html>

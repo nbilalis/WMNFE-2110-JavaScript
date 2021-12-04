@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #5</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      const a = [1, 2, 3];
+      console.log(a.length);     // 3
+
+      a[3] = 4;
+      console.log(a.length);     // 4
+      console.log(a);            // [1, 2, 3, 4]
+
+      console.log(a[a.length]);  // undefined
+
+      a[a.length] = 5;           // add an item at the end
+      console.log(a);            // [1, 2, 3, 4]
+
+      const b = [];
+      b[100] = '1';
+      console.log(b.length);     // 101!
+
+      delete(a[1]);
+      console.log(a);            // [1, empty, 3]
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example #12</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      const things = ['chair', 'watch', 'spoon', 'book'];
+
+      // Use .splice(start[, count, item1, item2, ...]) to remove, replace, or add items
+
+      let copy = things.slice();
+      let removed = copy.splice(2);
+      console.log(removed);  // ['spoon', 'book']
+      console.log(copy);    // ['chair', 'watch']
+
+      copy = things.slice();
+      removed = copy.splice(1, 2);
+      console.log(removed);  // ['watch', 'spoon']
+      console.log(copy);    // ['chair', 'book']
+
+      copy = things.slice();
+      removed = copy.splice(2, 2, 'table');
+      console.log(removed);  // ['spoon', 'book']
+      console.log(copy);    // ['chair', 'watch', 'table']
+
+      copy = things.slice();
+      removed = copy.splice(1, 1, 'table', 'clock');
+      console.log(removed);  // ['watch']
+      console.log(copy);    // ['chair', 'table', 'clock', 'spoon', 'book']
+
+    </script>
+  </body>
+</html>

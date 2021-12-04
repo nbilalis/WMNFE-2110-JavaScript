@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>var, let</title>
+</head>
+<body>
+	<script>
+		'use strict';
+
+		a = 3;
+
+		var a; // Hoisting - Δήλωση μετά τη χρήση
+
+		console.log(a);
+
+		var b = 3;
+
+		var b = 4; // Re-declaration - Επαναδήλωση
+
+		console.log(b);
+
+		if (true) {
+			// Scope - Εμβέλεια
+
+			var c = 5;
+
+			let d = 6;
+		}
+
+		console.log(c); // 5
+		console.log(d); // Σφάλμα
+	</script>
+</body>
+</html>

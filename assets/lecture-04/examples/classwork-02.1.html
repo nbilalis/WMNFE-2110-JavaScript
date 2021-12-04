@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classwork #2</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      const names = [];
+
+      while (true) {
+        const name = prompt("Enter student's name, or leave it blank to stop:");
+
+        if (name.length === 0) break; // name === ""
+
+        names.push(name);
+      }
+
+      // Show on console
+
+      for (let i = 0; i < names.length; i +=1) {
+        console.log(names[i]);
+      }
+    </script>
+  </body>
+</html>

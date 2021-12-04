@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #6</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      const names = [
+        'Barmpounis, Andronikos',
+        'Copeland, Stephen Richard',
+        'Matsan, Denys',
+        'Mylonas, Georgios',
+        'Paraskevopoulos, Konstantinos-Aias',
+        'Tselikis, Lampros',
+        'Zoumi, Vilelmini Evangelia', // Trailing, dangling comma
+      ];
+
+      // Use a for to traverse an array
+      for (let i = 0; i < names.length; i++) {
+        console.log(names[i]);
+
+        // Try uncommenting the following lines, one by one
+        // to see their result
+        // document.write(names[i] + '<br>');
+        // document.write(`${i+1}. ${names[i]} <br>`);
+        // document.write(`${i+1}. ${names[names.length - 1 - i]} <br>`); // Reverse order
+      }
+
+    </script>
+  </body>
+</html>
