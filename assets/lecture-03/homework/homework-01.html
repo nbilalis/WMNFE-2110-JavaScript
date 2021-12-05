@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework #1</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      let a = 1, b = 100, tries = 0;
+      const max_tries = 7; // Math.floor(Math.log2(b - a + 1)) + 1
+
+      alert(`Think a number between ${a} and ${b}, but keep it a secret!`);
+
+      while (true) {
+        tries += 1;
+
+        let c = Math.floor((a + b) / 2); // Average (integer) of a & b
+
+        let answer = prompt(`Try #${tries}: Is it ${c}? Enter 'y' if yes, or 'n' if no`);
+
+        if (answer === 'y') {
+          alert(`I found the number you were thinking about (${c}) in ${tries} try(ies)!`);
+          break;
+        } else if (tries === max_tries) {
+          alert('Hmm, there is something fishy about your answers...');
+          break;
+        }
+
+        let higher_lower = prompt(`Is it higher than ${c}? Press 'h' if higher, or 'l' if lower`);
+
+        if (higher_lower === 'h') {
+          a = c + 1;
+        } else {
+          b = c - 1;
+        }
+      }
+    </script>
+  </body>
+</html>
