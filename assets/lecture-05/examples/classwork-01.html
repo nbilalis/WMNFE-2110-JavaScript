@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classwork #2</title>
+  </head>
+  <body>
+    <img id='carousel' width="600" height="400" alt='Carousel' />
+    <script>
+      'use strict';
+
+      /*
+      Carousel
+
+      Φτιάξτε μία `HTML` σελίδα που θα εμφανίζει μία εικόνα η οποία θα αλλάζει αυτόματα κάθε μερικά δευτερόλεπτα.
+      Μπορείτε να βρείτε τυχαίες εικόνες από εδώ: [https://picsum.photos/](https://picsum.photos/)
+      */
+
+      function random(limit) {
+        return Math.floor(Math.random() * limit) + 1;
+      }
+
+      function changeImage() {
+        const carousel = document.getElementById('carousel');
+        carousel.src = `https://picsum.photos/600/400/?image=${random(100)}`;
+      }
+
+      setInterval(changeImage, 2000);
+    </script>
+  </body>
+</html>

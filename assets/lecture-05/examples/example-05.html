@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #5</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      const a = 1,
+        b = 2,
+        c = 3,
+        d = 4;
+
+      function average(a, b, c) {
+        // d (from the outer scope) is still visible here
+        // a, b, c are "masked" from the local params
+
+        return (a + b + c) / 4;
+      }
+
+      const res = average(6, 4, 8);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #11</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      const planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+
+      // That's not a proper way to do DOM manipulation.
+      const output = `<ul><li>${planets.join('</li><li>')}</li></ul>`;
+
+      console.log(output);
+      document.write(output);
+    </script>
+  </body>
+</html>

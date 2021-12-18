@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #3</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      // Named function
+      function power(a, b) {
+        return a ** b;
+      }
+
+      // Alternatve ways to declare the same function
+
+      // Function expression
+      const power1 = function (a, b) {
+        return a ** b;
+      };
+
+      // Arrow function
+      const power2 = (a, b) => {
+        return a ** b;
+      };
+
+      // Or even "simpler", ommiting the return statement
+      const power3 = (a, b) => a ** b;
+
+      console.log(power(4, 2));
+      console.log(power1(4, 2));
+      console.log(power2(4, 2));
+      console.log(power3(4, 2));
+    </script>
+  </body>
+</html>

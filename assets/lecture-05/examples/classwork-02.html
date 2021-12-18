@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classwork #2</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      /*
+      Ζάρια
+
+      Φτιάξτε μία `HTML` σελίδα που θα προσομοιώνει τη ρίψη δύο ζαριών, κάθε φορά που φορτώνει/ανανεώνεται η σελίδα.
+
+      Μπορείτε να βρείτε εικόνες για τα ζάρια από εδώ: https://commons.wikimedia.org/wiki/Category:Dice_faces
+      */
+
+      const diceFaces = [
+        'https://upload.wikimedia.org/wikipedia/commons/2/2c/Alea_1.png',
+        'https://upload.wikimedia.org/wikipedia/commons/b/b8/Alea_2.png',
+        'https://upload.wikimedia.org/wikipedia/commons/2/2f/Alea_3.png',
+        'https://upload.wikimedia.org/wikipedia/commons/8/8d/Alea_4.png',
+        'https://upload.wikimedia.org/wikipedia/commons/5/55/Alea_5.png',
+        'https://upload.wikimedia.org/wikipedia/commons/f/f4/Alea_6.png',
+      ];
+
+      function random(limit) {
+        return Math.floor(Math.random() * limit) + 1;
+      }
+
+      const d1 = random(6);
+      const d2 = random(6);
+
+      document.write(`<img src='${diceFaces[d1 - 1]}'>`);
+      document.write(`<img src='${diceFaces[d2 - 1]}'>`);
+    </script>
+  </body>
+</html>

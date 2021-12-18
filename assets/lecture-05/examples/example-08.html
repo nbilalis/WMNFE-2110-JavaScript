@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example #8</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+
+      const handler = setInterval(alarm, 3000);
+
+      function alarm() {
+        alert('Wake up!!!');
+      }
+
+      function snooze() {
+        clearInterval(handler);
+      }
+    </script>
+
+    <button onclick="snooze()">Snooze</button>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Example #8</title>
+</head>
+<body>
+	<script>
+		'use strict';
+
+		const planets = [
+			"Mercury",
+			"Venus",
+			"Earth",
+			"Mars",
+			"Jupiter",
+			"Saturn",
+			"Uranus",
+			"Neptune"
+		];
+
+		function planet_place(name) {
+			let place = planets.indexOf(name);
+
+			if (place === -1) return null;
+
+		 	place += 1;
+
+			/* place += place === 1 ? 'st' :
+						 place === 2 ? 'nd' :
+						 place === 3 ? 'rd' : 'th'; */
+
+			switch (place) {
+				case 1:
+					place += 'st';
+					break;
+				case 2:
+					place += 'nd';
+					break;
+				case 3:
+					place += 'rd';
+					break;
+				default:
+					place += 'th';
+					break;
+			}
+
+			return place;
+		}
+
+		const input = prompt('Enter planets name:');
+
+		const result = planet_place(input);
+
+		if (result !== null) {
+			alert(`${input} is in ${result} place`);
+		} else {
+			alert(`${input} was not found in planets`);
+		}
+
+	</script>
+</body>
+</html>
