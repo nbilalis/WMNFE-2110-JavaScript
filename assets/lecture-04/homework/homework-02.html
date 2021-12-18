@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework #2</title>
+  </head>
+  <body>
+    <script>
+      /*
+      Φτιάξτε ένα script που να ελέγχει αν ένας πίνακας είναι ταξινομημένος!
+      1. Αρχικά, με τη βοήθεια μίας while (true), ζητάμε επαναλαμβανόμενα
+      στοιχεία από το χρήστη και τα προσθέτουμε με τη σειρά σε έναν πίνακα.
+      2. Η διαδικασία εισαγωγής σταματά όταν δοθεί για είσοδος το κενό string " "
+      (αυτό συμβαίνει όταν ο χρήστης δε γράψει κάτι στο prompt και πατήσει το
+      Enter / OK).
+      3. Σε μία νέα επανάληψη for, ελέγχουμε κάθε στοιχείο με το επόμενό του. Αν
+      το στοιχείο στη θέση i είναι μικρότερο από το στοιχείο στη θέση i+1,
+      συνεχίζουμε τον έλεγχο, διαφορετικά εμφανίζεται το μήνυμα "Not sorted"
+      και η επανάληψη σταματά.
+      4. Αν η επανάληψη ολοκληρωθεί, τότε σημαίνει ότι όλοι οι έλεγχοι ήταν
+      επιτυχείς και εμφανίζεται το μήνυμα "Sorted".
+      */
+
+      'use strict';
+
+      const names = [];
+
+      while (true) {
+        const input = prompt('Enter name:');
+
+        if (input === '' || input === null) break; // if (!input)
+
+        names.push(input);
+      }
+
+      let isSorted = true;
+
+      for (let i = 0; i < names.length; i++) {
+        if (names[i] > names[i + 1]) {
+          isSorted = false;
+          break;
+        }
+      }
+
+      if (isSorted) {
+        console.log('Is sorted');
+      } else {
+        console.log('Is not sorted');
+      }
+
+      // console.log(isSorted ? 'Is sorted' : 'Is not sorted');
+      // console.log(`Is${isSorted ? '' : ' not'} sorted`);
+    </script>
+  </body>
+</html>

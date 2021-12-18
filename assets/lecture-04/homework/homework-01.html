@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework #1</title>
+  </head>
+  <body>
+    <h1>Planets</h1>
+    <script>
+      /*
+      Φτιάξτε ένα script το οποίο κάνει διαδοχικά τις εξής ενέργειες, με τη συγκεκριμένη σειρά:
+      */
+
+      'use strict';
+
+      // 1. Αρχικοποιεί έναν πίνακα planets με τις τιμές Mars, Saturn και Uranus.
+      const planets = ['Mars', 'Saturn', 'Uranus'];
+
+      // 2. Προσθέτει στο τέλος του πίνακα τις τιμές Neptune και Pluto.
+      planets.push('Neptune', 'Pluto');
+      console.log(planets);
+
+      // 3. Προσθέτει στην αρχή του πίνακα τις τιμές Mercury, Venus, Earth και Earth's Moon.
+      planets.unshift('Mercury', 'Venus', 'Earth', "Earth's Moon");
+      console.log(planets);
+
+      // 4. Παρεμβάλλει την τιμή Jupiter, μεταξύ των Mars και Saturn.
+      planets.splice(5, 0, 'Jupiter');
+      console.log(planets);
+
+      // 5. Αφαιρεί την τιμή Earth's Moon.
+      planets.splice(3, 1);
+      console.log(planets);
+
+      // 6. Αφαιρεί την τιμή Pluto :(.
+      planets.pop();
+      console.log(planets);
+
+      // 7. Εμφανίζει τα στοιχεία του πίνακα (όπως/όπου θέλετε), είτε με τη χρήση μίας "κλασικής" for, είτε με τη χρήση της for...of.
+      document.write('<ol>');
+
+      for (let i = 0; i < planets.length; i++) {
+        document.write(`<li>${planets[i]}</li>`);
+      }
+
+      // Alternatively
+      /* for (const planet of planets) {
+        document.write(`<li>${planet}</li>`);
+      } */
+
+      document.write('</ol>');
+    </script>
+  </body>
+</html>
