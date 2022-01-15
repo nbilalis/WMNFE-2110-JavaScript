@@ -25,17 +25,6 @@ $accent-color: #743bbc;
     font-weight: bold;
   }
 
-  h4 {
-    font-size: 1.5em; // around 36px
-    font-weight: bold;
-  }
-
-  h5 {
-    font-size: 1em; // around 30px
-    font-weight: bold;
-    margin-bottom: 0;
-  }
-
   p {
     line-height: 1.4em; // around 24px
   }
@@ -330,18 +319,6 @@ $accent-color: #743bbc;
       text-align: center;
     }
 
-
-    > h4 {
-      font-size: 1.2em;
-      margin-bottom: 1em;
-    }
-
-    > h5 {
-      font-size: 1em;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
     > p {
       img {
         display: block;
@@ -437,6 +414,11 @@ $accent-color: #743bbc;
         bottom: -0.5em;
         border-bottom: $angle-border white solid;
       }
+    }
+
+    > h4 {
+      font-size: 1.2em;
+      margin-bottom: 1em;
     }
   }
 
