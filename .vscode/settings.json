@@ -3,7 +3,7 @@
   "editor.fontLigatures": false,
 
   "compile-hero.scss-output-directory": ".",
-  "compile-hero.disable-compile-files-on-did-save-code": false,
+  "compile-hero.disable-compile-files-on-did-save-code": true,
 
   "markdownlint.config": {
     "MD001": false,
@@ -11,5 +11,7 @@
     "MD024": false,
     "MD026": false,
     "MD041": false
-  }
+  },
+
+  "vscode-edge-devtools.webhint": false
 }
