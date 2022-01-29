@@ -1,0 +1,4 @@
+[submodule "assets/christmas-lights"]
+	path = assets/christmas-lights
+	url = https://github.com/nbilalis/christmas-lights.git
+
