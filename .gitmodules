@@ -1,4 +1,6 @@
 [submodule "assets/christmas-lights"]
 	path = assets/christmas-lights
 	url = https://github.com/nbilalis/christmas-lights.git
-
+[submodule "assets/countdown-timer"]
+	path = assets/countdown-timer
+	url = https://github.com/nbilalis/countdown-timer.git
