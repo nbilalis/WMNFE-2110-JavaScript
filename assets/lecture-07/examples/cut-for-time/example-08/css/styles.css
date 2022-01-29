@@ -1,0 +1,12 @@
+label, button {
+	display: block;
+	margin-top: 1em;
+}
+
+.error {
+	border: 1px solid red;
+}
+
+.ok {
+	border: 1px solid green;
+}
