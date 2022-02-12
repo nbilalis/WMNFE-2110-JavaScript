@@ -1,0 +1,28 @@
+img,
+button {
+  display: block;
+  margin-bottom: 1em;
+}
+
+a {
+  display: inline-block;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+a[target='_blank']::after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin-left: 0.2em;
+}
+
+li.first {
+  color: darkgreen;
+}
+
+li.last {
+  color: darkred;
+}
+
+li.list-item {
+  font-weight: bold;
+}
