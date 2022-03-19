@@ -4,3 +4,6 @@
 [submodule "assets/countdown-timer"]
 	path = assets/countdown-timer
 	url = https://github.com/nbilalis/countdown-timer.git
+[submodule "assets/image-gallery"]
+	path = assets/image-gallery
+	url = https://github.com/nbilalis/image-gallery.git

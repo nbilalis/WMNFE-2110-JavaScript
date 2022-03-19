@@ -1,0 +1,43 @@
+.gallery__container {
+  display: inline-block;
+  position: relative;
+}
+
+.gallery__left, .gallery__right {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  opacity: .1;
+  transition: opacity 1s;
+  cursor: pointer;
+}
+
+.gallery__left:hover, .gallery__right:hover {
+  opacity: 1;
+}
+
+.gallery__left {
+  left: 0;
+}
+
+.gallery__right {
+  right: 0;
+}
+
+.gallery__progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 10px;
+  background: cyan;
+  opacity: .75;
+  transition: width 1s;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Gallery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+	<script src="js/gallery.js"></script>
+</head>
+<body>
+	<div id="gallery1" class="gallery__container"></div>
+	<div id="gallery2" class="gallery__container"></div>
+	<script>
+		const images1 = [], images2 = [], images3 = [];
+
+		for (let i = 0; i < 10; i++) {
+			const rn1 = Math.floor(Math.random() * 100000) + 1;
+			const rn2 = Math.floor(Math.random() * 100000) + 1;
+
+			images1.push(`https://source.unsplash.com/random/600x400?sig=${rn1}`)
+			images2.push(`https://source.unsplash.com/random/600x400?sig=${rn2}`)
+		}
+
+		let gallery1 = new Gallery(images1, 'gallery1', 2).start();
+		let gallery2 = new Gallery(images2, 'gallery2', 3).start();
+	</script>
+</body>
+</html>

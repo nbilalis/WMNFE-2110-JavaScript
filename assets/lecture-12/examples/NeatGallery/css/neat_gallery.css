@@ -1,0 +1,67 @@
+.neat-gallery {
+  display: inline-block;
+  margin: 2.5em;
+}
+
+.neat-gallery .wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+/* .main-img {
+  display: inline-block;
+  width: 400px;
+  height: 300px;
+} */
+
+.neat-gallery .thumb-list {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.neat-gallery .thumb {
+  width: 100px;
+  padding-top: 0.1em;
+  cursor: pointer;
+}
+
+.neat-gallery .thumb + .thumb {
+  margin-left: 0.5em;
+  transition: transform 0.5s;
+}
+
+.neat-gallery .thumb.current {
+  transform: perspective(50em) translateZ(5em);
+}
+
+.neat-gallery .previous-btn, .neat-gallery .next-btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  padding: 0.5em;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  background-color: rgba(255, 255, 255, 0.25);
+  opacity: 0.5;
+  transition: opacity 1s;
+}
+
+.neat-gallery .previous-btn:hover, .neat-gallery .next-btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.neat-gallery .previous-btn {
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.neat-gallery .next-btn {
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
